@@ -66,7 +66,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                             // Redirect user to welcome page
                             header("location: welcome.php");
                         } else{
-                            // Display an error message if password is not valid
+                            // Display   an error message if password is not valid
                             $password_err = "The password you entered was not valid.";
                         }
                     }
@@ -95,7 +95,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <title>Royal Login</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
     <link rel="icon" type="image/png" href="img/logo.png">
-    <link rel="stylesheet" type="text/css" href="ccs/login.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
 
 </head>
 <body>
