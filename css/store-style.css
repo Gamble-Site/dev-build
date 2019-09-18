@@ -1,0 +1,9 @@
+.containers {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    color: black;
+    margin-top: 150px;
+}

@@ -62,6 +62,7 @@ mysqli_close($link);
         <h3 class="masthead-brand">SG Gamble</h3>
         <nav class="nav nav-masthead justify-content-center">
           <a class="nav-link" href="games.php">Games</a>
+          <a class="nav-link" href="store.php">Store</a>
           <a class="nav-link" href="settings.php">Settings</a>
           <a class="nav-link" href="logout.php">Logout</a>
         </nav>

@@ -104,7 +104,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                     </div>
                     <div class="form-group">
                     <button type="submit" class="btn btn-outline-success" value="Login">Submit</button>
-                    <button class="btn btn-outline-danger" href="welcome.php">Cancel</button>
+                    <a href="profile.php"><button class="btn btn-outline-danger">Cancel</button></a>
                     </div>
                     </div>  
                 </div>
