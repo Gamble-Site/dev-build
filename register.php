@@ -103,7 +103,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 </head>
 
 <body>
-
+<div class="login-container">
     <div class="inlog-form">
         <div class="container-login100">
             <div class="wrap-login100">
@@ -131,6 +131,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <button type="submit" class="btn btn-outline-success">Registreren</button>
         </div>
     </div>
+</div>
 
 	<script src="js/tilt/tilt.jquery.min.js"></script>
 
