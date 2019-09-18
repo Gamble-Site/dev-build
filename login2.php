@@ -87,10 +87,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     mysqli_close($link);
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title> Royal Log in</title>
     <meta charset="UTF-8">
@@ -98,12 +96,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/login.css">
 </head>
-
 <body>
-
-    <div class="limiter">
+    <div class="inlog-form">
         <div class="container-login100">
             <div class="wrap-login100">
                 <div class="logo-pic">
@@ -121,17 +118,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <span class="help-block"><?php echo $password_err; ?></span>
             </div>
             <div class="form-group">
-                <input type="submit" class="btn btn-primary" value="Login">
+            <button type="button" class="btn btn-outline-success">Login</button>
             </div>
-            <p>Don't have an account? <a href="register.php">Sign up now</a>.</p>
+            <p class="text">Don't have an account? <a href="register.php">Sign up now</a>.</p>
         </form>
             </div>
         </div>
     </div>
-
-	<script src="js/tilt/tilt.jquery.min.js"></script>
-
-
 </body>
-
 </html>
