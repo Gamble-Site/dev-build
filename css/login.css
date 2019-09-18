@@ -3,22 +3,25 @@ html {
     background-color: black;
 }
 
+.login-container {
+    display: flex;
+    justify-content: center;
+}
+
 .inlog-form {
     background-color: white;
     border: 7.5px solid cadetblue;
     border-radius: 30px;
     font-family: "Arial Rounded MT Bold";
-    display: flex;
-    justify-content: center;
-    margin: 50px 30%;
-}
-
-.wrapper {
-    width: 350px;
-    padding: 20px;
+    margin-top: 30px;
+    width: 400px;
 }
 
 .text {
+    text-align: center;
+}
+
+.reset-text {
     text-align: center;
 }
 
@@ -31,8 +34,7 @@ html {
 
 .form-group {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 10px 10px;
     text-align: center;
 }
 

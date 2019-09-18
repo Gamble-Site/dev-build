@@ -75,32 +75,42 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <head>
     <meta charset="UTF-8">
     <title>Reset Password</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
-    <style type="text/css">
-        body{ font: 14px sans-serif; }
-        .wrapper{ width: 350px; padding: 20px; }
-    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
 </head>
 <body>
-    <div class="wrapper">
-        <h2>Reset Password</h2>
-        <p>Please fill out this form to reset your password.</p>
-        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post"> 
-            <div class="form-group <?php echo (!empty($new_password_err)) ? 'has-error' : ''; ?>">
-                <label>New Password</label>
-                <input type="password" name="new_password" class="form-control" value="<?php echo $new_password; ?>">
-                <span class="help-block"><?php echo $new_password_err; ?></span>
+    <div class="login-container">
+        <div class="inlog-form">
+            <div class="container-login100">
+                <div class="wrap-login100">
+                    <div class="logo-pic">
+                        <img src="img/img-01.png" alt="IMG">
+                    </div>
+                    <div class="reset-text">                
+                    <h2>Reset Password</h2>
+                    <p>Please fill out this form to reset your password.</p>
+                    </div>
+                    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post"> 
+                    <div class="form-group <?php echo (!empty($new_password_err)) ? 'has-error' : ''; ?>">                    
+                    <label>New Password</label>                    
+                    <input type="password" name="new_password" class="form-control" value="<?php echo $new_password; ?>">
+                    <span class="help-block"><?php echo $new_password_err; ?></span>
+                    </div>
+
+                    <div class="form-group <?php echo (!empty($confirm_password_err)) ? 'has-error' : ''; ?>">
+                    <label>Confirm Password</label>
+                    <input type="password" name="confirm_password" class="form-control">
+                    <span class="help-block"><?php echo $confirm_password_err; ?></span>
+                    </div>
+                    <div class="form-group">
+                    <button type="submit" class="btn btn-outline-success" value="Login">Submit</button>
+                    <button class="btn btn-outline-danger" href="welcome.php">Cancel</button>
+                    </div>
+                    </div>  
+                </div>
             </div>
-            <div class="form-group <?php echo (!empty($confirm_password_err)) ? 'has-error' : ''; ?>">
-                <label>Confirm Password</label>
-                <input type="password" name="confirm_password" class="form-control">
-                <span class="help-block"><?php echo $confirm_password_err; ?></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" class="btn btn-primary" value="Submit">
-                <a class="btn btn-link" href="welcome.php">Cancel</a>
-            </div>
-        </form>
+        </div>
     </div>    
 </body>
+
 </html>

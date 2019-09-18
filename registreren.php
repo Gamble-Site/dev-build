@@ -103,7 +103,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 </head>
 
 <body>
-
+<div class="login-container">
     <div class="inlog-form">
         <div class="container-login100">
             <div class="wrap-login100">
@@ -121,6 +121,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <input type="password" name="password" class="form-control">
                 <span class="help-block"><?php echo $password_err; ?></span>
             </div>
+<<<<<<< HEAD:registreren.php
             <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
                 <label>Herhaal wachtwoord</label>
                 <input type="password" name="password" class="form-control">
@@ -135,6 +136,17 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 	<script src="js/tilt/tilt.jquery.min.js"></script>
 
 
+=======
+            <div class="form-group">
+            <button type="submit" class="btn btn-outline-success" value="Login">Login</button>
+            </div>
+            <p class="text">Geen account? <a href="register.php">Registreer nu</a>.</p>
+        </form>
+            </div>
+        </div>
+    </div>
+    </div>
+>>>>>>> 1c7df3fc5239b1d04226cd1161d16da0761778d7:login.php
 </body>
 
 </html>
