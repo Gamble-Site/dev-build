@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
     background-color: black;
 }
 
@@ -19,28 +20,31 @@ body, html {
 .text {
     text-align: center;
 }
+
 .reset-text {
     text-align: center;
 }
+
 .logo-pic {
     display: block;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
 }
+
 .form-group {
     display: block;
     margin: 10px 10px;
-    
     text-align: center;
-    }
-
-figure{
-    width:300px;
-    overflow:hidden;
-    margin:0;
 }
-figure img{
-    display:inline-block;
-    width:70%;
+
+figure {
+    width: 300px;
+    overflow: hidden;
+    margin: 0;
+}
+
+figure img {
+    display: inline-block;
+    width: 70%;
 }

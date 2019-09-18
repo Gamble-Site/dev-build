@@ -38,10 +38,9 @@
         <h1 class="cover-heading">SG Gamble</h1>
         <p class="lead">Your page for daily gambling and creating another source of income! We're here to give you an opportunity to earn some side cash to your income.</p>
         <p class="lead">
-          <a href="#" class="btn btn-lg btn-secondary">Sign Up!</a>
+          <a href="register.php" class="btn btn-lg btn-secondary">Sign Up!</a>
         </p>
       </main>   
-
       <footer class="mastfoot mt-auto">
         <div class="inner">
           <p>Made by<a href="#"> Sven </a>and<a href="#"> Guillermo</a>.</p>

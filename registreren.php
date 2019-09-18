@@ -112,15 +112,31 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 </div>
                 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
-                <label>Username</label>
+                <label>Voer een gebruikersnaam in</label>
                 <input type="text" name="username" class="form-control" value="<?php echo $username; ?>">
                 <span class="help-block"><?php echo $username_err; ?></span>
-            </div>    
+            </div>
             <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
-                <label>Password</label>
+                <label>Voer een wachtwoord in</label>
                 <input type="password" name="password" class="form-control">
                 <span class="help-block"><?php echo $password_err; ?></span>
             </div>
+<<<<<<< HEAD:registreren.php
+            <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
+                <label>Herhaal wachtwoord</label>
+                <input type="password" name="password" class="form-control">
+                <span class="help-block"><?php echo $password_err; ?></span>
+            </div>
+            
+            <div class="form-group">
+            <button type="button" class="btn btn-outline-success">Registreren</button>
+        </div>
+    </div>
+
+	<script src="js/tilt/tilt.jquery.min.js"></script>
+
+
+=======
             <div class="form-group">
             <button type="submit" class="btn btn-outline-success" value="Login">Login</button>
             </div>
@@ -130,6 +146,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         </div>
     </div>
     </div>
+>>>>>>> 1c7df3fc5239b1d04226cd1161d16da0761778d7:login.php
 </body>
 
 </html>
